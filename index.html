@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>My portfolio website</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9427d8f344.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -46,15 +47,29 @@
                         organization.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Education</p>
-                        <p class="tab-links">experience</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li>
-                                <span>UI/UX</span><br>Designin Web / App Interfaces
-                            </li>
+                            <li><span>UI/UX</span><br>Designin Web / App Interfaces</li>
+                            <li><span>Web Devolopment</span><br>Build website</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designin Web / App Interfaces</li>
+                            <li><span>Web Devolopment</span><br>Build website</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designin Web / App Interfaces</li>
+                            <li><span>Web Devolopment</span><br>Build website</li>
+                            
                         </ul>
                     </div>
 
@@ -64,6 +79,84 @@
             </div>
         </div>
        </div>
+       <!-----------------services------------->
+
+       <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I can provide you to clear and proper web design </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX design</h2>
+                    <p>I can provide you to clear and proper UI/UX design </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>I can provide you to clear and proper App design </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+       </div>
+        <!-----------------portpolio------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/photo9.jpg" >
+                        <div class="layer">
+                            <h3>Employee Management App</h3>
+                            <p>This is full ui/ux design contain for the ABC Software company</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/photo10.jpg" >
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>This is full ui/ux design contain for the ABC Software company</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/photo11.jpg" >
+                        <div class="layer">
+                            <h3>Power consumption app</h3>
+                            <p>This is full ui/ux design contain for the ABC Software company</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        
+            
+        }
+
+
+       </script>
 
     </body>
 </html>
