@@ -82,7 +82,7 @@ nav ul li a:hover::after{
     
 }
 .header-tex h1 span{
-    color: blue;
+    color:#6800f0;
 }
 
 #about{
@@ -129,7 +129,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #1f2f92;
+    background: #6800f0;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -169,7 +169,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div {
-    background: #8d96ea;
+    background: #b58dea;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -196,7 +196,7 @@ nav ul li a:hover::after{
 
 }
 .services-list div:hover{
-    background: #240cba;
+    background: #6800f0;
     transform: translateY(-10px);
 }
 
@@ -229,7 +229,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0),#392ba6);
+    background: linear-gradient(rgba(0, 0, 0, 0),#6800f0);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -283,7 +283,7 @@ nav ul li a:hover::after{
     transition:background 0.5s ;
 }
 .btn:hover{
-    background: #1221a0;
+    background: #6800f0;
 }
 
 /*-------------------contact-------------------*/
@@ -334,7 +334,7 @@ form input,form textarea{
     background: #cbc9d6;
     padding: 15px;
     margin: 15px 0;
-    color: #04074c;
+    color: #000000;
     font-size: 18px;
     border-radius: 6px;
 }
