@@ -4,9 +4,12 @@
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background: #fefefe;
-    color: black;
+    background: #0f0e0e;
+    color: rgb(255, 252, 252);
    
 }
 #header{
@@ -28,8 +31,9 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 80px;
     height: auto;
+    border-radius: 50%;
 }
 
 nav ul li{
@@ -41,7 +45,7 @@ nav ul li{
 }
 nav ul li a{
     font-size: 18px;
-    color: black;
+    color: rgb(255, 254, 254);
     text-decoration: none;
     position: relative;
 }
@@ -74,7 +78,8 @@ nav ul li a:hover::after{
 .picture1{
     position: relative;
     float: right;
-   margin: top;
+    margin: top;
+    
 }
 .header-tex h1 span{
     color: blue;
@@ -104,12 +109,12 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: rgb(9, 9, 12);
+    color: rgb(255, 255, 255);
 }
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-    color: #373e98;
+    color: #dedee1;
     font-weight: 400;
 }
 .tab-links{
@@ -124,7 +129,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #1221a0;
+    background: #1f2f92;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -140,7 +145,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #04074c;
+    color: #c9c9d0;
     font-size: 14px
     ;
 }
@@ -266,3 +271,87 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 }
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #6800f0;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration:none;
+    color: #faf9f9;
+    transition:background 0.5s ;
+}
+.btn:hover{
+    background: #1221a0;
+}
+
+/*-------------------contact-------------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #6b69d0;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size:30px ;
+    margin-right: 15px;
+    color:#8e8e94;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+.social-icons a:hover{
+    color: #373e98;
+    transform: translateY(-5px);
+
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #584bad;
+
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #cbc9d6;
+    padding: 15px;
+    margin: 15px 0;
+    color: #04074c;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #31335a;
+    margin-top: 20px;
+    font-weight: 300;
+
+}
+
